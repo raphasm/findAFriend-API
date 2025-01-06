@@ -1,0 +1,41 @@
+{
+  "name": "findafriend-api",
+  "version": "1.0.0",
+  "description": "Find A Friend API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphasm/findAFriend-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphasm/findAFriend-API/issues"
+  },
+  "homepage": "https://github.com/raphasm/findAFriend-API#readme",
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
+    "@types/node": "20.2.1",
+    "tsup": "6.7.0",
+    "tsx": "3.12.7",
+    "typescript": "5.0.4",
+    "vitest": "0.34.3"
+  },
+  "dependencies": {
+    "@fastify/cookie": "9.0.4",
+    "@fastify/jwt": "7.2.0",
+    "@prisma/client": "4.14.1",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.0.3",
+    "fastify": "4.17.0",
+    "zod": "3.21.4"
+  }
+}
